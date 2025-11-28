@@ -1,0 +1,267 @@
+Below is a clean **Java OOPs interview Q&A list**, answered exactly the way hiring managers expect.
+Short, crisp, and professional answers — perfect for interviews.
+
+---
+
+## ✅ **Top Java OOP Interview Questions & Answers (Interview Style)**
+
+---
+
+# **1️⃣ What is OOP?**
+
+**Answer:**
+OOP (Object-Oriented Programming) is a programming paradigm based on the concepts of **objects** and **classes**. It helps in writing modular, reusable, and maintainable code.
+Java implements OOP through principles like **Encapsulation, Inheritance, Polymorphism, and Abstraction**.
+
+---
+
+# **2️⃣ What is a Class and an Object?**
+
+### **Class**
+
+A blueprint/template that defines properties and behaviors.
+
+### **Object**
+
+A real instance created from a class.
+
+**Example:**
+
+```java
+class Car {
+   String brand;
+   void start() {}
+}
+
+Car c = new Car(); // object
+```
+
+---
+
+# **3️⃣ What is Encapsulation?**
+
+**Answer:**
+Encapsulation means **binding data (variables) and methods (functions)** into a single unit and restricting direct access using **private** fields and **public getters/setters**.
+
+**Why used?**
+✔ Protects data
+✔ Controls access
+✔ Improves maintainability
+
+---
+
+# **4️⃣ What is Inheritance?**
+
+**Answer:**
+Inheritance allows one class to acquire the properties and methods of another class using the `extends` keyword.
+
+**Example:**
+
+```java
+class Animal { void eat() {} }
+class Dog extends Animal { void bark() {} }
+```
+
+**Benefits:**
+✔ Code reusability
+✔ Method overriding
+✔ Supports hierarchical relationships
+
+---
+
+# **5️⃣ What is Polymorphism?**
+
+### **Answer:**
+
+Polymorphism means **one name, many forms**.
+
+### Two types:
+
+1. **Compile-time polymorphism (Method Overloading)**
+2. **Runtime polymorphism (Method Overriding)**
+
+**Example:**
+
+```java
+class A { void show() {} }
+class B extends A { void show() {} }  // overriding
+```
+
+---
+
+# **6️⃣ What is Method Overloading?**
+
+**Answer:**
+Method Overloading happens when multiple methods share the same name but differ in **parameters**.
+
+**Occurs at:** Compile-time.
+
+---
+
+# **7️⃣ What is Method Overriding?**
+
+**Answer:**
+When a subclass provides its own implementation of a method defined in the parent class, it’s overriding.
+
+**Occurs at:** Runtime.
+
+---
+
+# **8️⃣ What is Abstraction?**
+
+**Answer:**
+Abstraction hides implementation details and shows only necessary features.
+
+**Achieved by:**
+✔ Abstract Class
+✔ Interface
+
+---
+
+# **9️⃣ Abstract Class vs Interface**
+
+| Feature     | Abstract Class      | Interface                                   |
+| ----------- | ------------------- | ------------------------------------------- |
+| Methods     | Abstract + Concrete | Abstract (Java 8+ default & static allowed) |
+| Variables   | Final or non-final  | Always `public static final`                |
+| Inheritance | Single              | Multiple                                    |
+| Use Case    | Partial abstraction | Full abstraction                            |
+
+---
+
+# **🔟 What is a Constructor?**
+
+**Answer:**
+A constructor initializes objects.
+It has the same name as the class and no return type.
+
+**Types:**
+
+1. Default
+2. Parameterized
+3. Copy constructor (manual in Java)
+
+---
+
+# **1️⃣1️⃣ What is ‘super’ keyword?**
+
+**Answer:**
+`super` is used to access **parent class variables, methods, and constructors**.
+
+```java
+super();        // call parent constructor
+super.show();   // call parent method
+```
+
+---
+
+# **1️⃣2️⃣ What is ‘this’ keyword?**
+
+**Answer:**
+`this` refers to the current object.
+
+Used for:
+✔ Avoiding variable shadowing
+✔ Calling current class methods
+✔ Calling constructors (`this()`)
+
+---
+
+# **1️⃣3️⃣ Can Java support multiple inheritance?**
+
+**Answer:**
+Java does **not** support multiple inheritance using classes (to avoid ambiguity), but it **supports it through interfaces**.
+
+---
+
+# **1️⃣4️⃣ What are Access Modifiers?**
+
+* **public** – accessible everywhere
+* **private** – accessible only within the class
+* **protected** – accessible in same package + subclasses
+* **default** – package-private
+
+---
+
+# **1️⃣5️⃣ What is the difference between Overloading and Overriding?**
+
+| Overloading                     | Overriding                 |
+| ------------------------------- | -------------------------- |
+| Compile-time                    | Runtime                    |
+| Same name, different parameters | Same name, same parameters |
+| Same class                      | Parent-child classes       |
+
+---
+
+# **1️⃣6️⃣ What is Composition?**
+
+**Answer:**
+Composition is a design principle where one class is made of one or more objects of other classes.
+
+**Example:**
+
+```java
+class Engine {}
+class Car {
+   private Engine engine = new Engine();
+}
+```
+
+**Strong relationship:** If Car is destroyed, engine also dies.
+
+---
+
+# **1️⃣7️⃣ What is Aggregation?**
+
+**Answer:**
+Aggregation is a weak association where one class has a reference to another but can exist independently.
+
+Example:
+
+```java
+class Department {}
+class Student {
+   Department dept;
+}
+```
+
+---
+
+# **1️⃣8️⃣ What is the difference between Encapsulation and Abstraction?**
+
+| Encapsulation                            | Abstraction                               |
+| ---------------------------------------- | ----------------------------------------- |
+| Hides data                               | Hides implementation                      |
+| Achieved using private + getters/setters | Achieved using abstract class & interface |
+| Focuses on security                      | Focuses on design                         |
+
+---
+
+# **1️⃣9️⃣ What is an Object Class?**
+
+**Answer:**
+`Object` is the root parent class of all Java classes.
+It contains methods like:
+✔ `toString()`
+✔ `equals()`
+✔ `hashCode()`
+✔ `clone()`
+✔ `finalize()`
+
+---
+
+# **2️⃣0️⃣ What is final keyword?**
+
+* **final variable** – constant
+* **final method** – cannot be overridden
+* **final class** – cannot be inherited
+
+---
+
+If you want, I can provide:
+✔ **Intermediate OOP Questions**
+✔ **Expert-level OOP Questions**
+✔ **OOP Coding Questions for interviews**
+✔ **Scenario-based questions asked in MNCs**
+
+Would you like **Beginner, Intermediate, Expert**, or **Scenario-based** next?
